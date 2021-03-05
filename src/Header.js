@@ -5,12 +5,15 @@ import { HomeOutlined, SearchOutlined, BarChartOutlined, InfoCircleOutlined, Dow
 
 class Header extends React.Component {
 
-	state = {
-		current: 'home',
-	};
+	constructor(props){
+		super(props);
+		this.state = {current: 'home'};
+	}
+
+	// state = { current: 'home'};
 
 	handleClick = e => {
-		console.log('click ', e);
+		// console.log('click ', e);
 		this.setState({ current: e.key });
 	};
 

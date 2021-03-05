@@ -3,10 +3,11 @@ import Header from './Header';
 import Footer from './Footer';
 import Intro from './Intro';
 import Search from './Search';
+import Result from './Result';
 
 import './App.css';
 
-const { Content } = Layout;
+// const { Content } = Layout;
 
 function App() {
   return (
@@ -15,9 +16,8 @@ function App() {
         <Header />
         <Intro />
         <Search />
-        <Content>
-          Content<br />
-        </Content>
+        <Result />
+        {/* <Content>Content<br /></Content> */}
         <Footer />
       </Space>
     </Layout>
