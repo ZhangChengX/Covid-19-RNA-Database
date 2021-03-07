@@ -4,60 +4,55 @@ import { Card, Table } from 'antd';
 
 const dataSource = [
   {
-    key: '1',
-    name: '胡1',
-    age: 32,
-    address: '西湖区湖底公园1号',
+    id: '1',
+    species: '胡1',
+    molecular: 32,
+    dataset: '西湖区湖底公园1号',
   },
   {
-    key: '2',
-    name: '胡2',
-    age: 42,
-    address: '西湖区湖底公园1号',
-  },
-  {
-    key: '3',
-    name: '张1',
-    age: 32,
-    address: '西湖区湖底公园1号',
-  },
-  {
-    key: '4',
-    name: '张2',
-    age: 42,
-    address: '西湖区湖底公园1号',
+    id: '2',
+    species: '胡2',
+    molecular: 42,
+    dataset: '西湖区湖底公园1号',
   },
 ];
 for (let i = 5; i < 100; i++) {
   dataSource.push({
-    key: i,
-    name: `Edward King ${i}`,
-    age: 32,
-    address: `London, Park Lane no. ${i}`,
+    id: i,
+    species: `Edward King ${i}`,
+    molecular: 32,
+    dataset: `London, Park Lane no. ${i}`,
   });
 }
 
 const columns = [
   {
-    title: '姓名',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'ID',
+    dataIndex: 'id',
+    key: 'id',
     width: 500,
-    sorter: (a, b) => a.name > b.name,
+    sorter: (a, b) => a.id - b.id,
   },
   {
-    title: '年龄',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'Species',
+    dataIndex: 'species',
+    key: 'species',
     width: 500,
-    sorter: (a, b) => a.age - b.age,
+    sorter: (a, b) => a.species > b.species,
   },
   {
-    title: '住址',
-    dataIndex: 'address',
-    key: 'address',
+    title: 'Molecular',
+    dataIndex: 'molecular',
+    key: 'molecular',
     width: 500,
-    sorter: (a, b) => a.address > b.address,
+    sorter: (a, b) => a.molecular > b.molecular,
+  },
+  {
+    title: 'Dataset (GEO)',
+    dataIndex: 'dataset',
+    key: 'dataset',
+    width: 500,
+    sorter: (a, b) => a.dataset > b.dataset,
   },
 ];
 
