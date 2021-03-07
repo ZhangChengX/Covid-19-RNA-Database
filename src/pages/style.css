@@ -1,0 +1,9 @@
+@import '~antd/dist/antd.css';
+
+.layout {
+	padding: 50px;
+}
+
+.hidden {
+	display: none;
+}

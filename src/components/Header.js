@@ -1,37 +1,37 @@
 import React from 'react'
 import { Menu } from 'antd';
+import { Link, withRouter } from 'react-router-dom';
 
 import { HomeOutlined, SearchOutlined, BarChartOutlined, InfoCircleOutlined, DownloadOutlined, LineChartOutlined, FileTextOutlined, ContactsOutlined, MailOutlined } from '@ant-design/icons';
+
 
 class Header extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = {current: 'home'};
+		this.state = {activeKey: "home"};
+		let rel_path = this.props.location.pathname;
+		let activeKey = rel_path.replace("/", "");
+		if (activeKey === "") activeKey = "home";
+		this.state = {activeKey: activeKey};
+		// console.log(this.state.activeKey);
 	}
-
-	// state = { current: 'home'};
 
 	handleClick = e => {
 		// console.log('click ', e);
-		this.setState({ current: e.key });
+		this.setState({ activeKey: e.key });
 	};
 
 	render() {
-		const { current } = this.state;
 		return (
 			<>
 				<h1>Covid-19 RNA Database</h1>
-				<Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
+				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal">
 			        <Menu.Item key="home" icon={<HomeOutlined />}>
-			          <a href="#1">
-			            Home
-			          </a>
+			          <Link to="/">Home</Link>
 			        </Menu.Item>
 			        <Menu.Item key="search" icon={<SearchOutlined />}>
-			          <a href="#2">
-			            Search
-			          </a>
+			          <Link to="/search">Search</Link>
 			        </Menu.Item>
 			        <Menu.Item key="statistics" icon={<BarChartOutlined />}>
 			          <a href="#3">
@@ -74,4 +74,4 @@ class Header extends React.Component {
 	}
 }
 
-export default Header;
+export default withRouter(Header);

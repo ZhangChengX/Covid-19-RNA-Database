@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, Row, Col, Divider, Checkbox, Input, Switch, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 
-import './Search.css';
+import './SearchForm.css';
 
 const demoOptions = ['All', 'Abc', 'Def', 'Ghi', 'Jkl', 'Mnop'];
 
@@ -10,9 +10,7 @@ function onChange(checkedValues) {
   console.log('checked = ', checkedValues);
 }
 
-
-
-class Search extends React.Component {
+class SearchForm extends React.Component {
 
 	constructor(props){
 		super(props);
@@ -26,8 +24,6 @@ class Search extends React.Component {
 	}
 
 	render() {
-		// const { current } = this.state;
-		
 		return (
 			<Card title="Data Searching" className="data-search">
 				<Row gutter={[24, 24]} style={{marginBottom:24}}>
@@ -95,4 +91,4 @@ class Search extends React.Component {
 	}
 }
 
-export default Search;
+export default SearchForm;
