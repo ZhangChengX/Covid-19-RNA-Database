@@ -1,6 +1,9 @@
 import React from 'react'
-import { Card, Table } from 'antd';
+import { Card, Table, Button, Radio } from 'antd';
 
+import { DownloadOutlined } from '@ant-design/icons';
+
+import './Result.css';
 
 const dataSource = [
   {
@@ -59,11 +62,35 @@ const columns = [
 
 class Search extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state = {downloadFileType: "csv"};
+  }
+
 	render() {
-		// const { current } = this.state;
+
+    const downloadCheckBoxOnChange = (e) => {
+      // console.log(e.target.value);
+      this.setState({
+        downloadFileType: e.target.value
+      });
+    };
+
+    const downloadBtnOnClick = (e) => {
+      console.log(this.state.downloadFileType);
+    };
 		
 		return (
 			<Card title="Searching Result" className="data-search">
+        <div className="download-box">
+          <Radio.Group onChange={downloadCheckBoxOnChange} value={this.state.downloadFileType}>
+            <Radio value={"csv"}>csv</Radio>
+            <Radio value={"txt"}>txt</Radio>
+          </Radio.Group>
+          <Button type="primary" shape="round" icon={<DownloadOutlined />} onClick={downloadBtnOnClick} ghost>
+            Download
+          </Button>
+        </div>
 				<Table dataSource={dataSource} columns={columns} scroll={{ x: 1500 }} />
 			</Card>
 		);

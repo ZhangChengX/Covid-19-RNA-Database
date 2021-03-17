@@ -4,6 +4,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 import { HomeOutlined, SearchOutlined, BarChartOutlined, InfoCircleOutlined, DownloadOutlined, LineChartOutlined, FileTextOutlined, ContactsOutlined, MailOutlined } from '@ant-design/icons';
 
+import './Header.css';
 
 class Header extends React.Component {
 
@@ -26,7 +27,7 @@ class Header extends React.Component {
 		return (
 			<>
 				<h1>Covid-19 RNA Database</h1>
-				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal">
+				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" className="nav-menu">
 			        <Menu.Item key="home" icon={<HomeOutlined />}>
 			          <Link to="/">Home</Link>
 			        </Menu.Item>

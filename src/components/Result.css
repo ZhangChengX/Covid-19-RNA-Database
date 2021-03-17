@@ -1,0 +1,10 @@
+
+.data-search {
+	position: relative;
+}
+
+.download-box {
+	position: absolute;
+    top: 13px;
+    right: 25px;
+}
