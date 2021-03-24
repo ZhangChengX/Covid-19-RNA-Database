@@ -1,8 +1,6 @@
-import React from 'react'
+ import React from 'react'
 import { Card, Row, Col, Divider, Checkbox, Input, Switch, Button } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-
-import './SearchForm.css';
 
 const demoOptions = ['All', 'Abc', 'Def', 'Ghi', 'Jkl', 'Mnop'];
 
@@ -25,26 +23,26 @@ class SearchForm extends React.Component {
 
 	render() {
 		return (
-			<Card title="Data Searching" className="data-search">
+			<Card title="Data Searching" className="data_search">
 				<Row gutter={[24, 24]} style={{marginBottom:24}}>
 					<Col span={8}>
 						<Card>
 							<strong>Species</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin"/>
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'Species'} onChange={onChange} />
 						</Card>
 					</Col>
 					<Col span={8}>
 						<Card>
 							<strong>Molecular</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin" />
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'Molecular'} onChange={onChange} />
 						</Card>
 					</Col>
 					<Col span={8}>
 						<Card>
 							<strong>Cell / Tissue</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin" />
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'CellTissue'} onChange={onChange} />
 						</Card>
 					</Col>
@@ -53,21 +51,21 @@ class SearchForm extends React.Component {
 					<Col span={8}>
 						<Card>
 							<strong>Dataset (GEO)</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin" />
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'CellTissue'} onChange={onChange} />
 						</Card>
 					</Col>
 					<Col span={8}>
 						<Card>
 							<strong>Conserved</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin" />
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'CellTissue'} onChange={onChange} />
 						</Card>
 					</Col>
 					<Col span={8}>
 						<Card>
 							<strong>Annotation-genomic location</strong>
-							<Divider dashed className="divider-thin"/>
+							<Divider dashed className="divider_thin" />
 							<Checkbox.Group options={demoOptions} defaultValue={['All']} name={'CellTissue'} onChange={onChange} />
 						</Card>
 					</Col>

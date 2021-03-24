@@ -1,0 +1,51 @@
+@import '~antd/dist/antd.css';
+
+.layout {
+	padding: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* header */
+.nav-menu li.ant-menu-item a {
+	font-weight: bold; 
+}
+
+/* search_form */
+.data_search .ant-checkbox-group label {
+  display: block;
+}
+
+.divider_thin {
+  margin: 12px 0;
+}
+
+/* reslut */
+.data-search {
+  position: relative;
+}
+
+.download-box {
+  position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+/*html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}*/

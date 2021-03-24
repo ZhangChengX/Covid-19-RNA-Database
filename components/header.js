@@ -1,17 +1,16 @@
 import React from 'react'
 import { Menu } from 'antd';
-import { Link, withRouter } from 'react-router-dom';
+import Link from 'next/link'
+import { withRouter } from 'next/router'
 
 import { HomeOutlined, SearchOutlined, BarChartOutlined, InfoCircleOutlined, DownloadOutlined, LineChartOutlined, FileTextOutlined, ContactsOutlined, MailOutlined } from '@ant-design/icons';
-
-import './Header.css';
 
 class Header extends React.Component {
 
 	constructor(props){
 		super(props);
 		this.state = {activeKey: "home"};
-		let rel_path = this.props.location.pathname;
+		let rel_path = this.props.router.pathname;
 		let activeKey = rel_path.replace("/", "");
 		if (activeKey === "") activeKey = "home";
 		this.state = {activeKey: activeKey};
@@ -29,10 +28,10 @@ class Header extends React.Component {
 				<h1>Covid-19 RNA Database</h1>
 				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" className="nav-menu">
 			        <Menu.Item key="home" icon={<HomeOutlined />}>
-			          <Link to="/">Home</Link>
+			          <Link href="/">Home</Link>
 			        </Menu.Item>
 			        <Menu.Item key="search" icon={<SearchOutlined />}>
-			          <Link to="/search">Search</Link>
+			          <Link href="/search">Search</Link>
 			        </Menu.Item>
 			        <Menu.Item key="statistics" icon={<BarChartOutlined />}>
 			          <a href="#3">

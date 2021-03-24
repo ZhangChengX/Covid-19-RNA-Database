@@ -3,17 +3,17 @@ import { Card, Table, Button, Radio } from 'antd';
 
 import { DownloadOutlined } from '@ant-design/icons';
 
-import './Result.css';
-
 const dataSource = [
   {
-    id: '1',
+    key: '1',
+    id: '12',
     species: '胡1',
     molecular: 32,
     dataset: '西湖区湖底公园1号',
   },
   {
-    id: '2',
+    key: '2',
+    id: '34',
     species: '胡2',
     molecular: 42,
     dataset: '西湖区湖底公园1号',
@@ -21,6 +21,7 @@ const dataSource = [
 ];
 for (let i = 5; i < 100; i++) {
   dataSource.push({
+    key: i,
     id: i,
     species: `Edward King ${i}`,
     molecular: 32,
@@ -91,7 +92,7 @@ class Search extends React.Component {
             Download
           </Button>
         </div>
-				<Table dataSource={dataSource} columns={columns} scroll={{ x: 1500 }} />
+				<Table dataSource={dataSource} columns={columns} pagination={{defaultPageSize:20}} scroll={{ x: 1500 }} />
 			</Card>
 		);
 	}
