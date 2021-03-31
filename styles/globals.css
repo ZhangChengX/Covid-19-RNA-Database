@@ -8,9 +8,33 @@
 	display: none;
 }
 
+/* all element border */
+.light-border {
+  border: 3px solid #e6f3ff;
+}
+
 /* header */
 .nav-menu li.ant-menu-item a {
 	font-weight: bold; 
+}
+
+.logo {
+  margin: 0 0 10px 5px;
+}
+
+.logo h1 {
+  display: inline;
+  font-size: 2rem;
+  color: #0084ff;
+  text-shadow: 2px 2px #fff;
+}
+
+.logo h6 {
+  display: inline;
+  font-size: 1rem;
+  margin-left: 2rem;
+  color: #66b5ff;
+  text-shadow: 1px 1px #fff;
 }
 
 /* search_form */
@@ -20,6 +44,30 @@
 
 .divider_thin {
   margin: 12px 0;
+}
+
+.search_form_checkbox_group {
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+}
+
+.search_form_checkbox_group::-webkit-scrollbar { /* Works on Chrome, Edge, and Safari */
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.search_form_checkbox_group::-webkit-scrollbar-track { /* Works on Chrome, Edge, and Safari */
+  /*background: orange;*/        /* color of the tracking area */
+}
+
+.search_form_checkbox_group::-webkit-scrollbar-thumb { /* Works on Chrome, Edge, and Safari */
+  background-color: #80c1ff;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #e6f3ff;  /* creates padding around scroll thumb */
+}
+.search_form_checkbox_group { /* Works on Firefox */
+  scrollbar-width: auto;          /* "auto" or "thin" */
+  scrollbar-color: #80c1ff #e6f3ff;   /* scroll thumb and track */
 }
 
 /* reslut */

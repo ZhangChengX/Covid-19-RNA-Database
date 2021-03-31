@@ -25,8 +25,11 @@ class Header extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Covid-19 RNA Database</h1>
-				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" className="nav-menu">
+				<div className="logo">
+					<h1>Noncoding-CoV</h1>
+					<h6>Human Noncoding RNAs in Response to SARS-CoV-2 infection</h6>
+				</div>
+				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" className="nav-menu light-border">
 			        <Menu.Item key="home" icon={<HomeOutlined />}>
 			          <Link href="/">Home</Link>
 			        </Menu.Item>
