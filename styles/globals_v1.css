@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 
 .layout {
-	padding: 0 50px;
+	padding: 50px;
 }
 
 .hidden {
@@ -30,9 +30,9 @@
 }
 
 /* header */
-.nav-menu {
+/*.nav-menu {
   padding: 0 50px;
-}
+}*/
 
 .nav-menu li.ant-menu-item a {
 	font-weight: bold; 

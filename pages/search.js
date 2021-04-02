@@ -17,7 +17,7 @@ function Search(data) {
   return (
     <Layout>
       <Head>
-        <title>Search</title>
+        <title>Search | {process.env.TITLE}</title>
       </Head>
       <SearchForm option_value={data} />
       <Result />

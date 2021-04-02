@@ -5,12 +5,14 @@ import Footer from '../components/footer';
 
 const LayoutWrapper = ({children}) => {
 	return (
-		<Layout className="layout">
-	      <Space direction="vertical" size="large">
-	        <Header />
-	        {children}
-	        <Footer />
-	      </Space>
+		<Layout>
+			<Header style={{ position: 'fixed', zIndex: 1, width: '100%' }} />
+	      		<Layout className="layout">
+	      			<Space direction="vertical" size="large">
+	        		{children}
+	        		</Space>
+	        	</Layout>
+	        	<Footer />
 	    </Layout>
 	);
 }

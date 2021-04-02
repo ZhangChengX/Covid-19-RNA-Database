@@ -25,7 +25,12 @@ class Header extends React.Component {
 	render() {
 		return (
 			<>
-				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" theme="dark" className="nav-menu light-border">
+				<div className="logo">
+					<h1>Noncoding-CoV</h1>
+					<br />
+					<h6>Human Noncoding RNAs in Response to SARS-CoV-2 infection</h6>
+				</div>
+				<Menu onClick={this.handleClick} selectedKeys={[this.state.activeKey]} mode="horizontal" className="nav-menu light-border">
 			        <Menu.Item key="home" icon={<HomeOutlined />}>
 			          <Link href="/">Home</Link>
 			        </Menu.Item>
@@ -63,11 +68,6 @@ class Header extends React.Component {
 			          </a>
 			        </Menu.Item>
 				</Menu>
-				<div className="logo layout">
-					<h1>Noncoding-CoV</h1>
-					<br />
-					<h6>Human Noncoding RNAs in Response to SARS-CoV-2 infection</h6>
-				</div>
 			</>
 		);
 	}

@@ -20,7 +20,7 @@ function Index(data) {
   	return (
 	    <Layout>
 	      <Head>
-	        <title>Home</title>
+	        <title>Home | {process.env.TITLE}</title>
 	      </Head>
 	      <Intro />
 	      <SearchForm option_value={data} />

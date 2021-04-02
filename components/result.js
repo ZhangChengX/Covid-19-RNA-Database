@@ -87,8 +87,8 @@ const columns = [
   },
   {
     title: 'Dataset (GEO)',
-    dataIndex: 'dataset',
-    key: 'dataset',
+    dataIndex: 'geo_database',
+    key: 'geo_database',
     sorter: (a, b) => a.dataset > b.dataset,
   },
   {
