@@ -34,6 +34,10 @@
   padding: 0 50px;
 }
 
+.nav-menu .ant-menu-item > span > a {
+  color: #fff;
+}
+
 .nav-menu li.ant-menu-item a {
 	font-weight: bold; 
 }
@@ -45,8 +49,8 @@
 .logo h1 {
   display: inline;
   font-size: 3rem;
-  color: #0069cc;
-  text-shadow: 2px 2px #fff;
+  color: #001529;
+  /*text-shadow: 2px 2px #fff;*/
 }
 
 .logo h6 {
@@ -54,7 +58,7 @@
   font-size: 2rem;
   /*margin-left: 2rem;*/
   color: #536279;;
-  text-shadow: 1px 1px #fff;
+  /*text-shadow: 1px 1px #fff;*/
 }
 
 /* intro_row */
