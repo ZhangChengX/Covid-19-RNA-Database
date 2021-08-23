@@ -1,0 +1,34 @@
+
+ID						int
+species					char
+molecular				char
+cell_tissue				char
+geo_database			char
+chromsome				char
+start_0_based			int
+end_1_based				int
+transcript_id			char
+expression_level		float and int
+strand					char(1)
+no_of_exons				int
+exon_sizes				char
+exon_relative_coordiante	char
+locus_id				char
+annoated_or_not			char
+conserved				char
+genomic_feature			char
+related_annoated_gene	char
+putative_function		char
+gene_ontology			char
+fdr						float
+foldchange				float
+
+
+
+CREATE TABLE `test_db_name`.`test_table_name` ( `id` INT NOT NULL AUTO_INCREMENT , `species` VARCHAR(50) NOT NULL , `molecular` VARCHAR(50) NOT NULL , `cell_tissue` VARCHAR(50) NOT NULL , `geo_database` VARCHAR(50) NOT NULL , `chromsome` VARCHAR(100) NOT NULL , `start_0_based` INT NOT NULL , `end_1_based` INT NOT NULL , `transcript_id` VARCHAR(100) NOT NULL , `expression_level` DOUBLE NOT NULL , `strand` VARCHAR(1) NOT NULL , `no_of_exons` INT NOT NULL , `exon_sizes` VARCHAR(100) NOT NULL , `exon_relative_coordiante` VARCHAR(100) NOT NULL , `locus_id` VARCHAR(100) NOT NULL , `annoated_or_not` VARCHAR(100) NOT NULL , `conserved` VARCHAR(100) NOT NULL , `genomic_feature` VARCHAR(100) NOT NULL , `related_annoated_gene` VARCHAR(100) NOT NULL , `putative_function` VARCHAR(100) NOT NULL , `gene_ontology` VARCHAR(100) NOT NULL , `fdr` DOUBLE NOT NULL , `foldchange` DOUBLE NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+
+
+INSERT INTO `rna` (`id`, `species`, `molecular`, `cell_tissue`, `geo_database`, `chromsome`, `start_0_based`, `end_1_based`, `transcript_id`, `expression_level`, `strand`, `no_of_exons`, `exon_sizes`, `exon_relative_coordiante`, `locus_id`, `annoated_or_not`, `conserved`, `genomic_feature`, `related_annoated_gene`, `putative_function`, `gene_ontology`, `fdr`, `foldchange`) VALUES (NULL, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '-17.242352534', '-16.203434325435');
+
+
+
