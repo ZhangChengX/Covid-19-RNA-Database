@@ -5,7 +5,7 @@
 3.	After installation, open Terminal and type command “node -v” to verify if the Nodejs is installed successfully.
  
 ### Install dependent packages
-1.	Download source code from: https://u.pcloud.link/publink/show?code=XZw0eWXZNv4yoIhYcHBe4ufdvz3ra4p5kAAV
+1.	Download source code from: https://github.com/zhangchengx/Covid-19-RNA-Database/archive/refs/heads/master.zip
 2.	Uncompress the zip file to any folder
 3.	In Terminal, enter in the uncompressed folder
 4.	Type command “npm install” in the Terminal to install the dependencies.
