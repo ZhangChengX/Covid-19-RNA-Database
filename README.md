@@ -1,3 +1,11 @@
+## Screenshots
+
+###### Home Page
+<img src="https://github.com/zhangchengx/Covid-19-RNA-Database/blob/master/docs/home_page.png" width="500" height="400">
+
+###### Searching Page
+<img src="https://github.com/zhangchengx/Covid-19-RNA-Database/blob/master/docs/search_page.png" width="500" height="1200">
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
